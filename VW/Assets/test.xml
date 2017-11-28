@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LevelsCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Levels>
+    <Level id="0" name="Мир чего-то">
+      <Nodes>
+        <Node>
+          <Position>1</Position>
+          <Name>Test</Name>
+          <Description>Another test</Description>
+          <Connections>
+            <Link>1</Link>
+            <Link>2</Link>
+          </Connections>
+        </Node>
+        <Node>
+          <Position>2</Position>
+          <Name>Test2</Name>
+          <Description>Another test2</Description>
+          <Connections>
+            <Link>1</Link>
+            <Link>2</Link>
+          </Connections>
+        </Node>
+      </Nodes>
+    </Level>
+  </Levels>
+</LevelsCollection>

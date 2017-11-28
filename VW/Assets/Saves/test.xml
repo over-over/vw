@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LevelsCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Levels>
+    <Level id="0" name="Мир моделирования">
+      <Nodes>
+        <Node>
+          <Position>0</Position>
+          <Name>Свойство</Name>
+        </Node>
+        <Node>
+          <Position>1</Position>
+          <Name>Метод</Name>
+        </Node>
+		<Node>
+          <Position>2</Position>
+          <Name>Моделирование</Name>
+        </Node>
+      </Nodes>
+    </Level>
+	<Level id="1" name="Мир задач">
+      <Nodes>
+        <Node>
+          <Position>0</Position>
+          <Name>Свойство</Name>
+        </Node>
+        <Node>
+          <Position>1</Position>
+          <Name>Задача</Name>
+          <Description>Мир методов моделирования задач</Description>
+          <Connections>
+            <Link>-1</Link>
+            <Link>2</Link>
+          </Connections>
+        </Node>
+		<Node>
+          <Position>2</Position>
+          <Name>Решение</Name>
+          <Description>Мир решения задач</Description>
+          <Connections>
+            <Link>1</Link>
+            <Link>1</Link>
+          </Connections>
+        </Node>
+      </Nodes>
+    </Level>
+	<Level id="2">
+      <Nodes>
+        <Node>
+          <Position>0</Position>
+          <Name>Свойство</Name>
+          <Connections>
+            <Link>1</Link>
+            <Link>1</Link>
+          </Connections>
+        </Node>
+      </Nodes>
+    </Level>
+	<Level id="3" name="Мир ресурсов, свойств, процесов">
+      <Nodes>
+        <Node>
+          <Position>0</Position>
+          <Name>Свойство</Name>
+		  <Description>Мир состояния и поведений</Description>
+		  <Connections>
+            <Link>1</Link>
+            <Link>0</Link>
+          </Connections>
+        </Node>
+        <Node>
+          <Position>1</Position>
+          <Name>Ресурс</Name>
+          <Connections>
+            <Link>-1</Link>
+            <Link>0</Link>
+          </Connections>
+        </Node>
+		<Node>
+          <Position>2</Position>
+          <Name>Действие</Name>
+        </Node>
+      </Nodes>
+    </Level>
+	<Level id="4" name="Мир измерений">
+      <Nodes>
+        <Node>
+          <Position>0</Position>
+          <Name>Значение</Name>
+		  <Connections>
+            <Link>1</Link>
+            <Link>0</Link>
+          </Connections>
+        </Node>
+        <Node>
+          <Position>1</Position>
+          <Name>Мера</Name>
+        </Node>
+		<Node>
+          <Position>2</Position>
+          <Name>Измерение</Name>
+        </Node>
+      </Nodes>
+    </Level>
+  </Levels>
+</LevelsCollection>
